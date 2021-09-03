@@ -7,6 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="CONTACT")
@@ -20,12 +23,14 @@ public class Contact {
 	private String secondName;
 	private String work;
 	private String email;
+	@Size(min = 10, max = 10)
 	private String phone;
 	private String image;
 	@Column(length = 1000)
 	private String description;
 	
 	@ManyToOne
+	@JsonIgnore 
 	private User user;
 	
 	public int getcId() {

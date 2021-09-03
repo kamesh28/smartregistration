@@ -59,8 +59,8 @@ body{
 
 .sidebar a{
 	display: block;
-	width: 1000%;
-	padding: 15px, 45 px;
+	width: 100%;
+	padding: 25px, 45 px;
 	text-decoration: none;
 	color: gray;
 }
@@ -94,4 +94,25 @@ body{
 	object-fit:cover;
 	border-radius:50%;
 	border:1px solid black;
+}
+
+/* search css */
+
+.search-container{
+	position: relative;
+}
+
+.search-result{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display: none;
+	
+}
+
+.active{
+	background: #009688 !important;
+	color: white !important;
 }
