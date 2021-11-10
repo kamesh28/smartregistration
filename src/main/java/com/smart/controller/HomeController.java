@@ -35,7 +35,7 @@ public class HomeController {
 	@RequestMapping("/")
 	public String home(Model model) {
 		
-		model.addAttribute("title", "Home- National Academic Depository");
+		model.addAttribute("title", "Home- IIT Bhubaneswar");
 		
 		return "home";
 	}
@@ -43,7 +43,7 @@ public class HomeController {
 	@RequestMapping("/about")
 	public String about(Model model) {
 		
-		model.addAttribute("title", "About- National Academic Depository");
+		model.addAttribute("title", "About- IIT Bhubaneswar");
 		
 		return "about";
 	}
